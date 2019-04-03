@@ -27,11 +27,11 @@
 		var verseChoose = document.querySelector('select');
 		var poemDisplay = document.querySelector('pre');
 		// STEP 2: Build out the event handler for the SELECT element
-		verseChoose.onChange = function(){
+		verseChoose.addEventListener('change', function(){
 			var verse = verseChoose.value;	
 			console.log(verse);
 			updateDisplay(verse);
-		}
+		});
 		// STEP 3: Construct updateDisplay() function
 		function updateDisplay(verse){
 			// STEP 4: Declare and initialize URL to point to text file(s)
